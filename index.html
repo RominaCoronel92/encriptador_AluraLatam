@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+
+<html lang="es">
+    
+    <head>
+        <meta charset="UTF-8"> 
+        <meta name="viewport" content="width=device-width">
+        <title>Encriptador</title>
+        <link rel="stylesheet" href="reset.css">
+        <link rel="stylesheet" href="style.css">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+
+   	<body> 
+		<header>
+			<div class="caja-header">
+				<section class="banner">
+				   <img src="imagenes/logoalura.png" class="logo">
+					<h1 class="titulo-principal">Encriptador de Texto</h1>
+				</section>
+			</div>	
+		</header>
+   		
+		<main>
+   			
+   			<section class="principal">
+   				<section class="caja-principal">
+	   				
+					<section class="bloque-mensaje">
+						<textarea cols="70" rows="10" id="mensaje" placeholder="Escriba su mensaje aqui..."></textarea>
+						<p>⚠ Solo letras minúsculas y sin acento</p>
+					</section>
+
+					<section class="bloque-desencriptado">
+						<textarea class="texto-desencriptado" cols="70" rows="10" id="bloque" style="background-image: url(imagenes/imagen.png);"></textarea>	
+					
+						<button name="Copiar" value="Copiar" id="botoncopiar" onclick="copiar()">Copiar</button>	
+
+					</section>
+									
+				</section>
+
+		
+				<section class="botones">
+					
+					<button name="Encriptar" value="Encriptar" id="boton-encriptar" onclick="btnEncriptar()">Encriptar</button>
+					<button name="Desencriptar" value="Desencriptar" id="boton-desencriptar" onclick="btnDesencriptar()">Desencriptar</button>
+
+				</section>
+   				
+   			</section>   			
+   			<br>
+			<hr>
+   		</main>
+		
+		<footer id="pie">
+			<div id="social-test">
+				<ul class="social">
+				  <li><a href="https://www.linkedin.com/in/rominacoronel/"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+				  <li><a href="https://wa.me/5491123901048"><i class="fa fa-whatsapp" aria-hidden="true"></i></a></li>
+				  <li><a href="https://instagram.com/colorlib"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+				  <li><a href="https://github.com/RominaCoronel92"><i class="fa fa-github" aria-hidden="true"></a></i></li>
+				</li>
+				</ul>
+			</div>
+			<p>&copyCopyright Coronel Romina</p>
+			<p>Alura Latam</p>
+		</footer>
+
+		<script src="script.js"></script>
+   	</body>
+
+
+</html>
+

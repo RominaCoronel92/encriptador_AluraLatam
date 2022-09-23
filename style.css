@@ -1,0 +1,327 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400);
+
+body{
+    width: 100%;
+    font-family: monospace;
+    background-image: url("imagenes/fondo.jpg");
+
+}
+
+header{
+    width: 80%;
+    align-content: center;
+}
+
+.banner{
+    padding: 0 5%;
+    width: 90%;
+    display: flex;
+    position: relative;
+}
+
+.logo{
+    width: 12%;
+    position: absolute;
+    min-width: 95px;
+    margin-top: 40px;
+}
+
+.titulo-principal{
+    width: 50%;
+    position: relative;
+    top: 6px;
+    right: 0;
+    display: block;
+    font-family: monospace;
+    font-size: 50px;
+    white-space: nowrap;
+    border-right: 4px;
+    width: 20ch;
+    padding-top: 3%;
+    padding-left: 15%;
+
+    animation: typing 2s steps(20);
+    overflow:hidden;
+}
+
+@keyFrames typing {
+
+    from {
+        width: 0
+    }
+}
+
+@keyFrames blink {
+    50% {
+        border-color: transparent
+    }
+}
+ 
+
+main{
+    width: 90%;
+    padding: 2%;
+}
+
+.principal{
+    width: 100%;
+    margin: 0;
+    
+}
+
+    .caja-principal{
+        width: 90%;
+        display: flex;
+        padding: 0 5%
+        
+    }
+
+        .bloque-mensaje{
+            width: 60%;
+            display: block;
+    
+        }
+
+           #mensaje{
+                width: 90%;
+                height: 200px;
+                font-size: 20px;
+                border-radius: 15px;
+                padding: 10px;
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: 30%;
+                border-color: rgb(212, 212, 212);
+                border-width: 4px;
+            }
+
+            
+            #mensaje:hover{
+                border-color:gray;
+            }
+
+            #mensaje:active{
+                border-color: #4c1fc9;
+            }
+        
+            #mensaje::placeholder{
+                color:rgba(56, 56, 56, 0.5);
+                font-family: monospace;
+                
+            }
+
+            .bloque-mensaje > p{
+                font-weight: bold;
+                margin: 5px 0;
+                font-family: monospace;
+                font-size: 15px;
+            }
+
+        .bloque-desencriptado{
+            width: 40%;
+            display: block;
+
+        }
+        
+        .texto-desencriptado{
+            font-size: 20px;
+        }
+
+            #bloque{
+                width: 80%;
+                height: 100%;
+                border-radius: 15px;
+                padding: 10px;
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: 70%;
+                border-color: rgb(212, 212, 212);
+                border-width: 4px;
+                opacity: 0.5;
+            
+                    }
+
+            #bloque:hover{
+                border-color:gray;
+            }
+
+            #bloque:active{
+                border-color: #4c1fc9;
+            }
+
+            #botoncopiar{
+                position: inherit;
+                width: 50%;
+                padding: 6px 0;
+                color: white;
+                background:  rgb(77, 77, 134);
+                font-family: monospace;
+                border-radius: 30px;
+                border: 1px solid rgb(50,50,94);
+                font-size: 20px;
+                margin: 4px;
+                transition: 1s ease;
+                cursor: pointer;
+                margin-left: 60px;
+            }
+
+            #botoncopiar:hover {
+                color: black;
+                border: 1px solid rgba(256, 256, 256, 1);
+                
+            }
+    
+    .botones{
+        width: 100%;
+	    display: flex;
+        padding: 0 5%;
+    }
+
+        #boton-encriptar{
+            width: auto;
+            padding: 1% 5%;
+            background: rgb(77, 77, 134);
+            border-radius: 30px;
+            border: 1px solid rgb(50,50,94);
+            color: white;
+            font-size: 20px;
+            margin: 1%;
+            font-family: monospace;
+            transition: 1s ease;
+            cursor: pointer;
+        }
+
+        #boton-encriptar:hover {
+            color: black;
+            border: 1px solid rgba(256, 256, 256, 1);
+        }
+        
+
+        #boton-desencriptar{
+            width: auto;
+            padding: 1% 5%;
+            border-radius: 30px;
+            border: 1px solid rgb(50,50,94);
+            color: white;
+            font-size: 20px;
+            background:  rgb(77, 77, 134);
+            font-family: monospace;
+            margin: 1%;
+            transition: 1s ease;
+            cursor: pointer;
+        }
+
+        #boton-desencriptar:hover{
+            color: black;
+            border: 1px solid rgba(256, 256, 256, 1);
+        }
+
+footer{
+    text-align: -webkit-center;
+}
+      
+   #social-test {
+        font-size: 35px;
+   }
+        li {
+          display: inline-block;
+        }
+        li a {
+          color: rgb(48, 48, 94);
+          border-radius: 30px;
+          list-style-type: none;
+          display: inline-block;
+          width: 50px;
+          height: 50px;
+          line-height: 50px;
+          padding: 1%;
+          border: 1px solid rgb(50,50,94);
+          cursor: pointer;
+          margin-left: 10px;
+          margin-bottom: 20px;
+          transition: ease .3s;
+        }
+          a:hover {
+            color: black;
+            border: 1px solid rgba(256, 256, 256, 1);
+          }
+    
+      
+      .social:hover > li {
+        opacity: 0.5;
+      }
+      
+      .social:hover > li:hover {
+        opacity: 1;
+      }
+
+    p{
+        text-align: center;
+        font-size: 15px;
+        font-family: monospace;
+        
+    }
+
+
+          
+
+
+@media screen and (max-width:610px){
+    .banner{
+        margin-left: 5%;
+    }
+
+    .titulo-principal{
+        padding-left: 30%;
+    }
+    .caja-principal{
+        display: block;
+        margin-left: 0%;
+    }    
+
+        .bloque-mensaje{
+            width: 100%;
+        }
+
+        #mensaje{
+            height: 150px;
+            background-size: 30%;
+            font-size: 16px;
+        }
+
+
+    .bloque-desencriptado{
+        width: 100%;
+    }
+
+        #bloque{
+            width: 90%;
+            height: 130px;
+            background-size: 45%;
+        }
+
+        #botoncopiar{
+            width: 100%;
+        }
+    
+    .botones{   
+        margin-left: 0%;
+        width: 90%;
+        display:flex;
+        flex-direction: column;
+    }
+        
+    hr{
+        height: 5px;
+        background-color: black;
+    }
+    
+
+    footer{
+        margin-left: 5%;
+        position: absolute;
+        bottom: 0;
+        width: 100px;
+        display: contents;
+    }
+    
